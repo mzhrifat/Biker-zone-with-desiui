@@ -8,6 +8,23 @@
 
    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.24/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
+
+<!--Taliwind custom-->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'bike-primary': '#E76f51',
+          }
+        }
+      }
+    }
+  </script>
+
+<!---Taliwind design-->
+
 <!--Google fonts poppins-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -51,7 +68,7 @@
         <li><a>Contact</a></li>
       </ul>
     </div>
-    <a class="btn btn-ghost text-4xl">BikerZone</a>
+    <a class="btn btn-ghost text-2xl font-bold">BikerZone</a>
   </div>
   <div class="navbar-center hidden lg:flex">
     <ul class="menu menu-horizontal px-1">
@@ -65,9 +82,8 @@
     <a class="btn btn-error">Login</a>
   </div>
 </div>
-<!-- ...existing code... -->
-        </nav>
 
+        </nav>
 
     </header>
 
