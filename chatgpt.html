@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Biker Zone</title>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar bg-base-100 max-w-6xl mx-auto">
+    <div class="flex-1">
+      <a class="btn btn-ghost text-xl">Biker Zone</a>
+    </div>
+    <div class="flex-none gap-2">
+      <div class="form-control hidden md:block">
+        <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
+      </div>
+      <button class="btn btn-primary">Login</button>
+    </div>
+  </div>
+
+  <!-- Carousel -->
+  <div class="carousel w-full max-w-6xl mx-auto my-6 rounded-lg">
+    <div id="slide1" class="carousel-item relative w-full">
+      <img src="images/slider/bike1.png" class="w-full" />
+      <div class="absolute flex items-center h-full bg-gradient-to-r from-black/70 to-transparent text-white p-10">
+        <div>
+          <h2 class="text-4xl font-bold">Ride the Speed<br />Feel the Freedom</h2>
+          <p class="my-4">Explore top-class sports bikes with cutting-edge design and unmatched performance. Let the road be your playground!</p>
+          <button class="btn btn-primary mr-2">Explore</button>
+          <button class="btn btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide3" class="btn btn-circle">❮</a>
+        <a href="#slide2" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide2" class="carousel-item relative w-full">
+      <img src="images/slider/bike2.png" class="w-full" />
+      <div class="absolute flex items-center h-full bg-gradient-to-r from-black/70 to-transparent text-white p-10">
+        <div>
+          <h2 class="text-4xl font-bold">Conquer Every Road<br />With Power and Precision</h2>
+          <p class="my-4">Built for thrill seekers, our bikes redefine acceleration and stability with advanced engineering.</p>
+          <button class="btn btn-primary mr-2">Explore</button>
+          <button class="btn btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide1" class="btn btn-circle">❮</a>
+        <a href="#slide3" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+    <div id="slide3" class="carousel-item relative w-full">
+      <img src="images/slider/bike3.png" class="w-full" />
+      <div class="absolute flex items-center h-full bg-gradient-to-r from-black/70 to-transparent text-white p-10">
+        <div>
+          <h2 class="text-4xl font-bold">Elegant Design<br />With Unmatched Performance</h2>
+          <p class="my-4">Our bikes are engineered for comfort, aesthetics, and maximum performance on every ride.</p>
+          <button class="btn btn-primary mr-2">Explore</button>
+          <button class="btn btn-outline btn-primary">Buy Now</button>
+        </div>
+      </div>
+      <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+        <a href="#slide2" class="btn btn-circle">❮</a>
+        <a href="#slide1" class="btn btn-circle">❯</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Featured Bikes -->
+  <section class="max-w-6xl mx-auto px-4 my-10">
+    <h2 class="text-3xl font-bold text-center mb-6">Featured Bikes</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <img src="images/others/feature-bike.png" alt="Feature Bike 1" class="mx-auto rounded-lg" />
+      <img src="images/others/feature-bike.png" alt="Feature Bike 2" class="mx-auto rounded-lg" />
+      <img src="images/others/feature-bike.png" alt="Feature Bike 3" class="mx-auto rounded-lg" />
+    </div>
+  </section>
+
+  <!-- Latest Bikes -->
+  <section class="max-w-6xl mx-auto px-4 my-10">
+    <h2 class="text-3xl font-bold mb-6">Latest Bikes</h2>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+      <!-- Bike 1 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="images/others/latest1.png" alt="Ducati XDIAVEL S-73" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Ducati XDIAVEL S-73</h2>
+          <p>The Ducati XDiavel S-73 combines power and luxury in a sleek cruiser body. Ideal for long-distance comfort and urban style.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Bike 2 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="images/others/latest2.png" alt="Urban Scooter" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">Urban Scooter</h2>
+          <p>Perfect for everyday commuting, the Urban Scooter offers smooth rides, high mileage, and compact design for city navigation.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+      <!-- Bike 3 -->
+      <div class="card bg-base-100 shadow-xl">
+        <figure><img src="images/others/latest3.png" alt="2021 Honda CBR500R" /></figure>
+        <div class="card-body">
+          <h2 class="card-title">2021 Honda CBR500R</h2>
+          <p>A sporty all-rounder with smooth control and dynamic design. Excellent for both beginners and experienced riders.</p>
+          <div class="card-actions justify-end">
+            <button class="btn btn-primary">Buy Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Happy Clients -->
+  <section class="max-w-6xl mx-auto px-4 my-10">
+    <h2 class="text-3xl font-bold text-center mb-6">Happy Clients</h2>
+    <div class="grid gap-6 grid-cols-1 md:grid-cols-3">
+      <div class="card bg-base-100 shadow-xl text-center p-4">
+        <img src="images/others/user-1.png" class="w-20 mx-auto rounded-full" />
+        <h3 class="text-xl font-semibold mt-4">John Doe</h3>
+        <p class="text-gray-600">"Amazing service! My new bike arrived on time and looks stunning. Highly recommend Biker Zone."</p>
+      </div>
+      <div class="card bg-base-100 shadow-xl text-center p-4">
+        <img src="images/others/user-2.png" class="w-20 mx-auto rounded-full" />
+        <h3 class="text-xl font-semibold mt-4">Jane Smith</h3>
+        <p class="text-gray-600">"Customer support was very helpful. I got exactly what I was looking for. Five stars!"</p>
+      </div>
+      <div class="card bg-base-100 shadow-xl text-center p-4">
+        <img src="images/others/user-3.png" class="w-20 mx-auto rounded-full" />
+        <h3 class="text-xl font-semibold mt-4">Robert Lee</h3>
+        <p class="text-gray-600">"Biker Zone has the best collection of sports bikes. Great pricing and fast delivery."</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="max-w-4xl mx-auto px-4 my-10">
+    <h2 class="text-3xl font-bold text-center mb-6">Frequently Asked Questions</h2>
+    <div class="space-y-4">
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="faq" checked="checked" />
+        <div class="collapse-title text-xl font-medium">
+          What is the delivery time for a new bike?
+        </div>
+        <div class="collapse-content">
+          <p>Delivery usually takes 5–7 business days depending on your location.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="faq" />
+        <div class="collapse-title text-xl font-medium">
+          Do you offer EMI or installment plans?
+        </div>
+        <div class="collapse-content">
+          <p>Yes, we provide EMI options through partnered banks and credit cards.</p>
+        </div>
+      </div>
+      <div class="collapse collapse-arrow bg-base-200">
+        <input type="radio" name="faq" />
+        <div class="collapse-title text-xl font-medium">
+          Can I return a bike if I don't like it?
+        </div>
+        <div class="collapse-content">
+          <p>Yes, returns are accepted within 7 days of delivery if the bike is unused and in original condition.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+    <p>&copy; 2025 Biker Zone. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
